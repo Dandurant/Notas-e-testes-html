@@ -1,0 +1,174 @@
+<!doctype html> <!-- Não esqueça da identação -->
+
+<html> <!-- Inicia a estrutura html -->
+ 
+    <head> <!-- Dentro de head, irão as estruturas que não aparecem, na maioria das vezes, diretamente no site. 
+                Estruturas de formatação, códigos JS para animações ou interações com o usuário -->
+        
+        <title> Anotações gerais </title> <!-- title define o título da pagina -->
+
+        <meta charset="utf-8"> 
+
+    </head>
+
+    <body> <!-- Em body, será possível configurar informações que aparecem diretamente para o usuário -->
+
+        <h1>Exemplo de título h1</h1> 
+
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed pretium, arcu sodales eleifend venenatis, tortor urna consectetur massa, ac egestas ex tortor in tortor. Nullam tristique ante vitae magna faucibus hendrerit. Aliquam metus arcu, vestibulum nec molestie a, placerat eget velit. Vestibulum convallis, nulla in imperdiet consequat, dolor arcu pharetra neque, convallis pretium nisl mauris at metus. Ut mollis eros id semper vestibulum. Vestibulum nec malesuada purus. Etiam auctor posuere lorem sit amet fringilla. Duis tristique nulla mollis cursus auctor. Curabitur in eros ultricies, feugiat lacus ut, molestie odio. Nullam imperdiet dolor quis sem vulputate, quis egestas nisi accumsan.</p>
+        
+        <hr> <!-- traça uma linha -->
+
+        <h2>Exemplo de título h2</h2>
+
+        <strong>Negrito / <b>Negrito também </b> <br> </strong> <!--é recomendado usar o strong-->
+
+        <em>Italico /</em> <i>Italico também</i> <br> <!-- é recomendado usar o em-->
+
+        <u>Underline </u>  <br>
+
+        <strike>Riscado</strike> <br>
+
+        <h2> Lista não ordenada</h2>
+
+        <hr>
+
+        <ul type = "circle"> <!-- Lista não ordenada. O type = "" é o estilo que vai marcar a lista: bolinha, quadrado  etc.-->
+
+            <li> Notebook </li> <!-- Item de lista -->
+
+            <li> Quem Somos</li>
+
+        </ul>
+
+        <hr>
+
+        <h2> Lista ordenada</h2>
+
+        <ol type = "i"> <!--Lista ordenada. Também dá pra usar o type, mas com valores diferentes como: 1 (numero), A (letras maiusculas), a (letras minusculas), i(algarismos romanos minúsculos), I (algarismos romanos maiúsculos) -->
+            
+            <li> Comida favorita </li>
+
+
+        </ol>
+
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed pretium, arcu sodales eleifend venenatis, tortor urna consectetur massa, ac egestas ex tortor in tortor. Nullam tristique ante vitae magna faucibus hendrerit. Aliquam metus arcu, vestibulum nec molestie a, placerat eget velit. Vestibulum convallis, nulla in imperdiet consequat, dolor arcu pharetra neque, convallis pretium nisl mauris at metus. Ut mollis eros id semper vestibulum. Vestibulum nec malesuada purus. Etiam auctor posuere lorem sit amet fringilla. Duis tristique nulla mollis cursus auctor. Curabitur in eros ultricies, feugiat lacus ut, molestie odio. Nullam imperdiet dolor quis sem vulputate, quis egestas nisi accumsan.
+        
+        <hr>
+
+        <h2>Teste de imagem</h2>
+
+            <img src="Imagens/Ferrari01.webp" width = "200" height="100"> <!-- Certifique-se de que a imagem utilizada está dentro da pasta certa. Manipule a imagem com width e height-->
+
+        <hr>
+        
+        <h2>Teste de link</h2>
+
+        <a href="Home.html">  <!-- Para colocar links de sites, tem que ser completo. Com o https://google.com.br -->
+             Clique aqui 
+        </a> <!-- Permite colocar links  -->
+
+        <hr>
+        
+        <h2>Tabela</h2>
+
+        <table border="2" width = "200"> <!-- O comando cria uma tabela. Border define a largura do pixel. Width aumenta a largura. Também dá pra colocar em porcentagem  -->
+
+            <tr>
+
+                <td> <!-- Dados da tabela -->
+
+                    Coluna 1
+
+                </td>
+
+                <td> 
+
+                    Coluna 2
+
+                </td>
+                
+            </tr> <!-- Cria as linhas da tabela/ table row-->
+
+            <tr>
+
+                <td>
+                    
+                    <a href="https://google.com.br/"> Linha 1 com teste de link</a>
+
+                </td>
+
+                <td>
+
+                    <img src="Imagens/Ferrari01.webp" 
+                    width="150"
+
+                </td>
+
+            </tr>
+
+            <tr>
+                <td colspan="2"> <!-- O colspan="2" faz essa linha ocupar duas colunas. É só mudar o numero. Para fazer uma linha que ocupa duas colunas, o comando é rowspan -->
+                    Linha 3 com teste que com linha que ocupa duas colunas
+                </td>
+            </tr>
+
+            <tr>
+                <td rowspan=""> 
+                    Linha 4 com teste de coluna que ocupa duas linhas
+                </td>
+            </tr>
+
+        </table>
+
+        <hr>
+
+        <h2> Formulários </h2>
+
+        <form action="processa.php"> <!-- Cria o formulário e dentro dele você edita os componetes a serem preenchidos. Se tivessemos uma configuração de php, enviaria os dados do formulário para lá  -->
+
+            Login:<br>
+            <input type="text" name="login"> <br> <!-- type define o tipo do componente e name o nome caso precisemos dele em algum momento -->
+
+            Senha:<br>
+            <input type="password" name="senha"> <br>
+
+            <input type="submit" value="Logar"> <br><br><br>
+
+            <input type="radio" name="sexo" value="M"> Masculino <br> <!-- Cria opções para serem selecionadas. Se quiser que apenas uma opção seja selecionada, precisa ter o mesmo name. O value é a informação que seria mandada do formulário para o php. -->
+
+            <input type="radio" name="sexo" value="F"> Feminino <br> <br> <br> 
+
+            <input type="checkbox" name="interesses"> Futebol <br> <!-- O checkbox permite selecionar várias opções-->
+             
+            <input type="checkbox" name="interesses"> Futebol <br>
+
+            <input type="checkbox" name="interesses"> Futebol <br> <br> <br> 
+
+            <select> <!-- Para fazer uma lista com itens determinados -->
+
+                <option value="sp"> <!-- Value a nomenclatura desse compoente e é o que seria enviado para o php --> 
+                    SP
+                </option>
+
+                <option>
+                    PR
+                </option>
+
+                <option>
+                    RS
+                </option>
+
+            </select> <br> <br> <br>
+
+            <textarea> 
+
+            </textarea> <!-- Cria uma caixa de texto --> <br> <br> <br>
+
+            <input type="submit" value="Cadastrar"> 
+ 
+        </form>
+        
+    </body>
+
+</html> <!-- Finaliza a estrutura html -->
