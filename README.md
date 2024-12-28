@@ -1,0 +1,1 @@
+Nesse repositório, pretende-se armazenar os testes e anotações sobre as aulas assistidas em https://www.udemy.com/course-dashboard-redirect/?course_id=1341268, que é um curso web da udemy chamado Desenvolvimento Web Completo - 20 cursos + 20 projetos.
